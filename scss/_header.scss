@@ -1,0 +1,105 @@
+.--header {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 250px;
+}
+
+.header-logo {
+    display: flex;
+    column-gap: 5px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icon/logo.svg);
+}
+
+.header-logo_title {
+    color: #2D2D2D;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 48px;
+}
+
+.nav-list_item {
+    position: relative;
+    transition: all .3s linear;
+
+    &:hover {
+        transform: scale(1.1);
+        &:nth-child(1) {
+            &::after {
+                content: '';
+                width: 21px;
+                border: 1.5px solid #FB9B69;
+                position: absolute;
+                bottom: -4px;
+                left: 46px;
+                transition: all .3s linear;
+            }
+        }
+        &:nth-child(2) {
+            &::after {
+                content: '';
+                width: 21px;
+                border: 1.5px solid #FB9B69;
+                position: absolute;
+                bottom: -4px;
+                left: 13px;
+            }
+        }
+        &:nth-child(3) {
+            &::after {
+                content: '';
+                width: 21px;
+                border: 1.5px solid #FB9B69;
+                position: absolute;
+                bottom: -4px;
+                left: 7px;
+            }
+        }
+        &:nth-child(4) {
+            &::after {
+                content: '';
+                width: 21px;
+                border: 1.5px solid #FB9B69;
+                position: absolute;
+                bottom: -4px;
+                left: 7px;
+            }
+        }
+    }
+}
+
+.nav-list_item a {
+    color: #4A4A4A;
+    font-family: Poppins;
+    font-size: 16px; 
+}
+
+.nav-button {
+    padding: 9px 23px;
+    cursor: pointer;
+
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+.--button-gren {
+    border: none;
+    border-radius: 20px;
+    background: #48B774;
+    transition: all .3s linear;
+    &:hover {
+        background: #53d185;
+        transition: all .3s linear;
+    }
+}

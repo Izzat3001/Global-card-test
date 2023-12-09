@@ -1,0 +1,95 @@
+
+$path: path("M77.5 56.5L61 72.5L54.5 80L50 85.5L45.5 91L42.5 95.5L39.5 99.5L36 104.5L29 117L23.5 127L20 135.5L16 145L13 152.5L11 158L9 165.5L7.5 171.5L6.5 176L5 182L4 189L2 201.5L1.5 209L1 217V224.5V233.5L1.5 239.5L2 246.5L3.5 259L5.5 270L8.5 282.5L12 294.5L16 306L21.5 318.5L27.5 331L34 342L43 355.5L54 369.5L60.5 377L67 383.5L75.5 392L86.5 401L101 411.5L114.5 420L122.5 424.5L128 427L137.5 431.5L148 435.5L157 438.5L171 442.5L188.5 446L204.5 448L217.5 449H230.5L245.5 448L262.5 446L278.5 442.5L296.5 437.5L317 429.5L335 420L351.5 410L369 396.5L376 390.5L388 378.5L401 363.5L409 353L417.5 339.5L423.5 328.5L430 316L433.5 307L438.5 293L442.5 278L445.5 263.5L447.5 249.5L448.5 238.5L449 231V217.5L448.5 207.5L446 187L444 177.5L442.5 170L434.5 145.5L429 132L424.5 123L419.5 113.5L413.5 104L407.5 95L403 89L398 82.5L391.5 75L379 62.5L369 53.5L357 44L346 36.5L336 30.5L328.5 26.5L322 23.5L311.5 19L299.5 14L291.5 11.5L285 9.5L275.5 7L268.5 5.5L260.5 4L253.5 3L239.5 1.5L233 1H228.5H223.5H218L213 1.5L196 3L179.5 5.5L165.5 9L149.5 14L132 21L112 31.5L93 44L77.5 56.5Z");
+
+.pain-card {
+    width: 450px;
+}
+
+.circle {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border: 2px solid #E8E8E8;
+    border-radius: 450px;
+}
+
+.flag-img {
+    border-radius: 50%;
+    border: 10px solid #fff;
+
+}
+
+.flag {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    offset-path: $path;
+    motion-path: $path;
+    animation: fla 10s linear infinite;
+    offset-rotate: 1turn;
+}
+
+@keyframes fla {
+    0%{
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+.flag2 {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 20px;
+}
+
+.flag3 {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    bottom: -180px;
+    right: 5px;
+}
+
+.flag4 {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    top: -140px;
+    left: 332px;
+}
+
+.flag5 {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    top: 50px;
+    left: 410px;
+}
+
+
+.circle-green {
+    position: relative;
+    top: -35%;
+    left: 19%;
+    width: 280px;
+    height: 280px;
+    border-radius: 280px;
+    background: #48B774;
+}
+
+.photo-content {
+    position: absolute;
+    top: -30%;
+    right: -100%;
+    width: 836px;
+}
